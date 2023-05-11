@@ -13,7 +13,7 @@ export function fizzBuzzGame(start: number, end: number) {
       numberList.push("fizz");
     }
 
-    if (i % 5 || i % 3 === 0) {
+    if (i % 5 === 0 && i % 3 === 0) {
       numberList.pop();
       numberList.push("fizzBuzz");
     }
