@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build": "tsc --watch",
-    "type": "module",
-    "test": "jest"
+    "test": "jest --collect-coverage",
+    "test:watch": "jest ---watchAll",
+    "prepare": "husky install",
+    "build": "tsc --watch"
   },
   "keywords": [],
   "author": "",
